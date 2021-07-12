@@ -16,3 +16,5 @@ print("You age is " + age)
 year = 100 - age + 2021
 
 print("You will turn 100 at " + year)  
+
+input()
