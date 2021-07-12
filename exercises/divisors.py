@@ -5,6 +5,6 @@ Create a program that asks the user for a number and then prints out a list of a
 '''
 
 number = int(input("Enter a number: "))
-x = range(2, number)
+x = range(1, number+1)
 divisors = [e for e in x if number % e == 0]
 print(str(number) + "'s divisors are " + str(divisors))
