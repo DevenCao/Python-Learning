@@ -9,10 +9,20 @@ Then I would see the string:
 shown back to me.
 '''
 
-def words_reverse(words = ""):
-    wordlist = words.split()
-    wordlist.reverse()
-    return " ".join(wordlist)
+def get_string():
+    return input("Enter some words: ")
 
-a = "i am a really frdined ds "
-print(words_reverse(a))
+def words_reverse(words = "", spliter = None, jointer = None):
+    spliter = spliter or " "
+    wordlist = words.split(spliter)
+    wordlist.reverse()
+    return jointer.join(wordlist)
+
+def main():
+    a = get_string()
+    split = input("Enter spliter: ") or " "
+    joint = input("Enter jointer: ") or " "
+    input("press Enter to reverse words...")
+    print(words_reverse(a,  split, joint))
+
+main()
